@@ -1,0 +1,760 @@
+/* ===========================*/
+/* Basic Setup */
+/* ===========================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+ul li a {
+    text-decoration: none;
+}
+p {
+    text-align: justify;
+}
+header {
+    box-sizing: border-box;
+}
+/* ===========================*/
+/* Reusable Components */
+/* ===========================*/
+
+.row {
+    max-width: 1290px;
+    margin: auto;
+}
+
+header {
+    background: white;
+}
+
+/* ===========================*/
+/* Menu Area */
+/* ===========================*/
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 1290px;
+}
+.row .logo {
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+.row .logo img {
+    width: 60px;
+    height: 60px;   
+}
+.navbar .menu {
+    width: 800px;
+    height: auto;
+    float: right;
+}
+.navbar .menu ul {
+    text-align: right;
+    margin: 20px 80px 0px 0px;
+}
+.navbar .menu ul li {
+    display: inline-block;
+}
+.navbar .menu ul li a {
+    color: #280C60;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0 20px 35px;
+    display: block;
+}
+.navbar .menu ul li a:hover {
+    color: #3586FF;
+}
+/* ===========================*/
+/* ICON Area */
+/* ===========================*/
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    color: White;
+}
+.icon-bar a:hover {
+    background-color: #000;
+}
+.facebook {
+    background: #3B5998;
+    color: white;
+}
+.twitter {
+    background: #55ACEE;
+    color: white;
+}
+.linkedin {
+    background: #007bb5;
+    color: white;
+}
+.pinterest {
+    background: #bb0000;
+    color: white;
+}
+
+/* ===========================*/
+/* ABOUT ME */
+/* ===========================*/
+
+.about-me {
+    height: 500px;
+    margin-top: 80px;
+    background: rgba(22, 88, 220, 0.14);
+    cursor: pointer;
+}
+.about-me .photo {
+    width: 500px;
+    float: right;
+}
+.about-me img {
+    margin-top: 65px;
+    width: 280px;
+    height: auto;
+    display: block;
+    text-align: left;
+}
+.about-text {
+    float: left;
+    width: 570px;
+    text-align: right;
+    margin-top: 90px;
+    margin-left: 120px;
+}
+.about-text h3 {
+    text-align: left;
+    font-size: 18px;
+    color: #3586FF;
+    font-weight: 500;
+    padding-top: 10px;
+}
+.about-text h2 {
+    text-align: left;
+    font-size: 40px;
+    color: #280C60;
+    font-weight: 700;
+    padding-top: 10px;
+}
+.about-text h4 {
+    text-align: left;
+    font-size: 16px;
+    color: #280C60;
+    font-weight: 400;
+    padding-top: 15px;
+}
+.about-text p {
+    text-align: left;
+    text-align: left;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding-top: 20px;
+    text-align: justify
+}
+.about-text download {
+    display: block;
+}
+.about-text a {
+    float: left;
+    margin: 25px 20px 0px 0px;
+    padding: 14px 30px;
+    text-align: center;
+    background: #3586FF;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.about-text a:hover {
+    color: black;
+    background: rgba(40, 12, 96, 0.26);
+    border: 2px solid #1658DC;
+}
+
+
+/* ===========================*/
+/* CONFUSE AREA */
+/* ===========================*/
+
+
+.confuses {
+    background: #DEE7FA;
+    width: 1290px;
+    height: 50px;
+    text-align: center; 
+}
+
+.confuse {
+    height: 100px;
+    width: 970px;
+    margin: 0px 160px;
+    background: white;
+    border-radius: 50px;
+    text-align: center;
+}
+.confuse ul li{
+    display: inline-block;
+    padding: 0px 60px;
+    margin: 25px 0px;
+    text-align: center;
+}
+.confuse ul li .fa-award,
+.confuse .fa-laptop-code,
+.confuse .fa-headset {
+    float: left;
+    background: #3586FF;
+    font-size: 30px;
+    margin: 0px 20px 0px 0px;
+    padding: 10px 13px;
+    border-radius: 50%;
+    color: white;
+}
+
+.confuse ul li h3 {
+    display: inline;
+    color: #280C60;
+    font-size: 16px;
+    padding: 5px 0px;
+}
+.confuse ul li h4 {
+    color: #3586FF;
+    font-size: 13px;
+    padding: 5px 0px;
+}
+
+.lclass {
+    border-left: 2px solid #3586FF;
+    border-right: 2px solid #3586FF;
+}
+
+
+/* ===========================*/
+/* MIDDLE SECTION */
+/* ===========================*/
+
+.middle-section {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    height: 400px;
+    margin-bottom: 0;
+}
+.middle-section .about2 {
+    width: 35%;
+    float: left;
+    text-align: right;
+}
+.middle-section img {
+    width: 270px;
+    height: auto;
+}
+.middle-section .about2-text {
+    width: 40%;
+    float: right;
+    text-align: left;
+    margin-right: 220px;
+}
+.middle-section .about2-text h4 {
+    display: inline-block;
+    Color: #3586FF;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.middle-section .about2-text h2 {
+    font-size: 40px;
+    color: #280C60;
+    font-weight: 700;
+    padding-top: 5px;
+}
+.middle-section .about2-text .about2p {
+    padding-top: 12px;
+    color: black;
+    font-size: 14px;
+    text-align: justify;
+    margin-bottom: 30px
+}
+.middle-section .about2-text ul li {
+    color: #3586FF;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px
+}
+.middle-section .about2-text h3 {
+    margin-top: 30px;
+    font-weight: bold;
+    color: #280C60;
+    font-size: 17px;
+}
+.middle-section .about2-text .about2ul li {
+    float: left;
+    margin-right: 30px;
+}
+.middle-section .about2-text h5 {
+    display: inline;
+    margin-left: 10px
+}
+.middle-section .about2-text .p1{
+    display: inline;
+    color: black;
+    padding-left: 25px;
+}
+.middle-section .about2-text .p2 {
+    display: inline;
+    color: black;
+    padding-left: 20px;
+}
+
+
+/* ===========================*/
+/* WHY CHOOSE ME*/
+/* ===========================*/
+
+
+
+.expert {
+    height: 400px;
+    margin-top: 120px;
+}
+.expert-text {
+    display: block;
+    text-align: center;
+}
+.expert-text h4 {
+    color: #3586FF;
+    font-size: 16px;
+}
+.expert-text h2 {
+    color: #280C60;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+.expert-css {
+    box-sizing: border-box;
+    padding: 20px 80px;
+    overflow: hidden;
+    margin: auto;
+}
+.expert-css .left-expert {
+    float: left;
+    width: 45%;
+    margin-right: 60px;
+}
+.expert-css .right-expert {
+    float: left;
+    width: 45%;
+    margin-right: 50px;
+}
+.expert-css .left-expert li {
+    margin: 50px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.expert-css .right-expert li {
+    margin: 50px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.expert-css .left-expert li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background-color: #D5D8DC;
+    width: 100%;
+    height: 25px;
+    border-radius: 100px;
+}
+.expert-css .right-expert li::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background-color: #D5D8DC;
+    width: 100%;
+    height: 25px;
+    border-radius: 100px;
+}
+.expert-css .left-expert li::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background-color: #3586ff38;
+    width: 0%;
+    height: 25px;
+    border-radius: 100px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2x;
+    animation-fill-mode: forwards;
+    
+}
+.expert-css .right-expert li::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    background-color: #3586ff38;
+    width: 0%;
+    height: 25px;
+    border-radius: 100px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2x;
+    animation-fill-mode: forwards;
+}
+.expert-css .left-expert li.fb::after {
+    animation-name: fb; 
+}
+@keyframes fb{
+    to{
+        width: 90%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .left-expert li.seo::after {
+    animation-name: seo;
+}
+@keyframes seo{
+    to{
+        width: 80%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .left-expert li.content::after {
+    animation-name: content;
+}
+@keyframes content{
+    to{
+        width: 90%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .left-expert li.youtube::after {
+    animation-name: youtube;
+}
+@keyframes youtube{
+    to{
+        width: 85%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .right-expert li.affiliate::after {
+    animation-name: affiliate;
+}
+@keyframes affiliate{
+    to{
+        width: 90%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .right-expert li.graphics::after {
+    animation-name: graphics;
+}
+@keyframes graphics{
+    to{
+        width: 80%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .right-expert li.webui::after {
+    animation-name: webui;
+}
+@keyframes webui{
+    to{
+        width: 90%;
+        background-color: #3586FF;
+    }
+}
+.expert-css .right-expert li.web::after {
+    animation-name: web;
+}
+@keyframes web{
+    to{
+        width: 85%;
+        background-color: #3586FF;
+    }
+}
+
+
+/* ===========================*/
+/* Qualification*/
+/* ===========================*/
+
+
+.journey {
+    height: 550px;
+    margin-top: 120px;
+}
+.journey-text {
+    display: block;
+    text-align: center;
+}
+.journey-text h4 {
+    color: #3586FF;
+    font-size: 16px;
+}
+.journey-text h2 {
+    color: #280C60;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5px; 
+}
+.journey-css {
+    margin-top: 40px;
+}
+.journey-css .left-journey {
+    float: left;
+    width: 40%;
+    margin: 0px 80px;
+}
+.journey-css .right-journey {
+    float: left;
+    width: 40%;
+    margin: 0px 50px 0 0;
+}
+
+.journey-css .left-journey li,
+.journey-css .right-journey li{
+    margin-top: 30px;
+}
+
+.journey-css .left-journey .edu,
+.journey-css .right-journey .exp {
+    color: #280C60;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.journey-css .left-journey .bsc,
+.journey-css .right-journey .bsc{
+    border-left: 2px solid #3586FF;
+    padding-left: 20px;
+}
+
+.journey-css .left-journey .bsc h4,
+.journey-css .right-journey .bsc h4 {
+    color: #280C60;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: 5px; 
+}
+
+.journey-css .left-journey .bsc h5,
+.journey-css .right-journey .bsc h5 {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px; 
+}
+
+.journey-css .left-journey .bsc h6,
+.journey-css .right-journey .bsc h6 {
+    color: #3586FF;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 10px; 
+}
+.journey-css .fa-graduation-cap,
+.journey-css .fa-briefcase {
+    padding-right: 10px;
+}
+.journey-css .fa-calendar-alt {
+    padding-right: 10px;
+}
+
+
+
+/* ===========================*/
+/* OFFER */
+/* ===========================*/
+
+
+
+.offer {
+    width: 80%;
+    height: 550px;
+    margin-top: 20px;
+}
+.offer-text {
+    display: block;
+    text-align: center;
+}
+.offer-text h4 {
+    color: #3586FF;
+    font-size: 16px;
+}
+.offer-text h2 {
+    color: #280C60;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 5px; 
+}
+
+.offer-css ul {
+    width: 33%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.offer-css ul li {
+    border: 1px solid #7B7D7D;
+    box-shadow: 3px 3px rgba(22, 88, 220, 0.3);
+    margin: 60px 20px;
+    padding: 30px;
+    border-top-right-radius: 30px;
+    height: 210px;
+}
+.offer-css ul li .fas{
+    font-size: 18px;
+    background-color: #3586FF ;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.offer-css ul li h4 {
+    color: #280C60;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-top: 16px; 
+}
+.offer-css ul li p {
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 16px; 
+    text-align: left;
+}
+
+.offer-css ul li:hover {
+    box-shadow: 4px 4px #3586FF;
+    transform: translateY(-10px);
+}
+
+
+.foot {
+    background: #3586FF;
+    margin-top: 250px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 10s linear infinite;
+}
+footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave2 4s linear infinite;
+}
+footer .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animatewave3 3s linear infinite;
+}
+footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave4 7s linear infinite;
+}
+
+@keyframes animatewave {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animatewave2 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animatewave3 {
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animatewave4 {
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

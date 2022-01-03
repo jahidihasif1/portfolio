@@ -1,0 +1,57 @@
+.download {
+    box-sizing: border-box;
+    display: block;
+}
+.download a {
+    float: left;
+    margin: 25px 20px 0px 0px;
+    padding: 14px 30px;
+    text-align: center;
+    background: #010916e7;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.download a:hover {
+    background: var(--clr);
+}
+
+
+.download a::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-text download {
+    display: block;
+}
+.about-text a {
+    float: left;
+    margin: 25px 20px 0px 0px;
+    padding: 14px 30px;
+    text-align: center;
+    background: #3586FF;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.about-text a:hover {
+    color: black;
+    background: rgba(40, 12, 96, 0.26);
+    border: 2px solid #1658DC;
+}
